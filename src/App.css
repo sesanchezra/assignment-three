@@ -1,0 +1,153 @@
+body{
+    background-color: black ;
+}
+
+
+
+
+/* ----- HEADER STYLES ----*/
+
+.header-app{
+    background-position-y: center;
+    background-position-x: center;
+    background-repeat:no-repeat ;
+    background-color: black ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: 120%;
+}
+
+.header-app-name{
+    transform: scale(0.5);
+}
+
+@media  (min-width: 500px) {
+
+    .header-app-name{
+        transform: scale(0.7);
+    }
+    
+}
+@media  (min-width: 700px) {
+
+    .header-app{
+        background-size: 90%;
+    }
+    
+}
+
+@media  (min-width:1000px) {
+
+    .header-app{
+        background-size: 80%;
+    }
+    .header-app-name{
+        transform: scale(0.9);
+    }
+    
+}
+@media  (min-width:1300px) {
+
+    .header-app{
+        background-size: 70%;
+    }
+    
+}
+
+/*------ location styles ----*/
+
+.location{
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+    margin:20px auto;
+    box-shadow: 0px 0px 5px 5px rgb(24, 46, 16);
+    border-radius: 20px;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.location h4{
+    margin: 10px;
+}
+
+.location span{
+    color: green;
+}
+
+
+
+@media (min-width: 500px){
+    .location{
+        font-size: 16px;
+    }
+}
+@media (min-width: 700px){
+    .location{
+        max-width: 80%;
+    }
+}
+
+
+
+/* ----- Custom Location -----*/
+
+.custom-location{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.custom-location input{
+    max-width: 90%;
+    min-width: 70%;
+    height: 30px;
+    background-color: rgb(24, 46, 16,0.8) ;
+    border-radius: 12px;
+    border: 3px solid rgb(24, 46, 16);
+    color: white;
+}
+
+.custom-location button{
+    height: 38px ;
+    width: 70px;
+    border-radius: 12px;
+    background-color: green ;
+    border: 3px solid green;
+    color: white;
+    font-weight: 600;
+}
+
+
+/*------ Resident Card ---------*/
+
+.residents-cards{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+    margin: auto auto;
+    gap: 20px;
+    padding: 20px;
+}
+
+.resident-card{
+    width: 250px;
+    height: 150px;
+    background: black;
+    box-shadow: 0px 0px 5px 5px rgb(24, 46, 16);
+    border-radius: 15px;
+    color:white;
+}
+
