@@ -12,7 +12,8 @@ function App() {
 
   const{location,onSubmitId} = useLocation();
 
-  console.log(location);
+  console.log(location?.residents)
+
   return (
     <div className="App">
       <Header />
@@ -23,18 +24,24 @@ function App() {
         onSubmitId={onSubmitId}
       />
       <div className='residents-cards'>
-        <ResidentCard
-        />
-        <ResidentCard
-        />
-        <ResidentCard
-        />
-        <ResidentCard
-        />
-        <ResidentCard
-        />
-        <ResidentCard
-        />
+        {/* {
+          residents.map(resident =>{
+            <ResidentCard
+            // resident={resident}
+            />
+          })
+        } */}
+        {
+          location?.residents.map(resident => (
+            <ResidentCard
+              resident={resident}
+              key={resident}
+            />
+            )
+          )
+        }
+        
+        
       </div>
       
 
