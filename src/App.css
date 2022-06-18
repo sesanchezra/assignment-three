@@ -161,8 +161,9 @@ body{
 .resident-card:hover{
     width: 350px;
     height: 180px;
-    background: rgba(2, 31, 7, 0.7);
+    background: rgba(0, 54, 9, 0.7);
     box-shadow: none;
+    justify-content:left;
 }
 
 
