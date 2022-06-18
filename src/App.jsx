@@ -9,14 +9,20 @@ import ResidentCard from './components/ResidentCard';
 import useLocation from './hooks/useLocation';
 
 function App() {
+  const [loading, setLoading] = useState(false)
 
   const{location,onSubmitId} = useLocation();
 
   console.log(location?.residents)
 
+  
+
+
   return (
+    <>
+    <Header />
     <div className="App">
-      <Header />
+      
       <Location
       location={location}
       />
@@ -24,13 +30,6 @@ function App() {
         onSubmitId={onSubmitId}
       />
       <div className='residents-cards'>
-        {/* {
-          residents.map(resident =>{
-            <ResidentCard
-            // resident={resident}
-            />
-          })
-        } */}
         {
           location?.residents.map(resident => (
             <ResidentCard
@@ -43,10 +42,8 @@ function App() {
         
         
       </div>
-      
-
-
     </div>
+    </>
   )
 }
 

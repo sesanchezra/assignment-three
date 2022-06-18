@@ -9,7 +9,7 @@ const ResidentCard = ({resident}) => {
     return (
         <div className='resident-card'>
             <div className='resident-state'>
-                <div className={`resident-status ${character?.status}`}></div>
+                <div className={`${character?.status}`}></div>
                 <p>{`${character?.status} - ${character?.species}`}</p>
             </div>
             <div className='resident-image'>
@@ -17,8 +17,8 @@ const ResidentCard = ({resident}) => {
             </div>
             <div className='resident-info'>
                 <h5><span>{character?.name}</span></h5>
-                <h5><span>Origin:</span>{character?.origin.name}</h5>
-                <h5><span>Episodes appear:</span>{character?.episode.length}</h5>
+                <h5><span>Origin: </span>{character?.origin.name}</h5>
+                <h5><span>Episodes appear: </span>{character?.episode.length}</h5>
             </div>
             
         </div>
